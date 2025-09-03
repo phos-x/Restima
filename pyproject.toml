@@ -1,0 +1,11 @@
+[project]
+name = "estima"
+version = "0.1.0"
+description = "Multi-source resource estimator for services, logs, and traces"
+authors = [{ name="Adebayo", email="adetayoadebayo67@gmail.com" }]
+license = "MIT"
+dependencies = ["psutil", "grpcio", "protobuf"]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
