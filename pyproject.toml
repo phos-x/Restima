@@ -2,9 +2,13 @@
 name = "estima"
 version = "0.1.0"
 description = "Multi-source resource estimator for services, logs, and traces"
-authors = [{ name="Adebayo", email="adetayoadebayo67@gmail.com" }]
+authors = [{ name="Adebayo", email="your@email.com" }]
 license = "MIT"
 dependencies = ["psutil", "grpcio", "protobuf"]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+packages = ["estima"]
 
 [build-system]
 requires = ["setuptools", "wheel"]

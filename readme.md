@@ -1,12 +1,12 @@
-Here’s a refined, GitHub-ready version of your README for **estima** — now styled for clarity, professionalism, and developer engagement:
+Here’s a refined, GitHub-ready version of your README for **restima** — now styled for clarity, professionalism, and developer engagement:
 
 ---
 
-# 🧠 Estima
+# 🧠 Restima
 
-**Estima** is a smart, lightweight Python library that helps you predict how much **RAM**, **CPU**, and **I/O** your tasks will need — before you deploy them.
+**Restima** is a smart, lightweight Python library that helps you predict how much **RAM**, **CPU**, and **I/O** your tasks will need — before you deploy them.
 
-Whether you're working with logs, traces, or direct service payloads, Estima gives you fast, confident resource estimates using clean data structures and human-friendly output.
+Whether you're working with logs, traces, or direct service payloads, Restima gives you fast, confident resource estimates using clean data structures and human-friendly output.
 
 ---
 
@@ -22,7 +22,7 @@ Whether you're working with logs, traces, or direct service payloads, Estima giv
 ## 🚀 Installation
 
 ```bash
-pip install estima
+pip install restima
 ```
 
 ---
@@ -37,7 +37,7 @@ To run a resource estimate, you’ll need two JSON files:
 Then run:
 
 ```bash
-python -m estima.cli \
+python -m restima.cli \
   --source [log|trace|service] \
   --payload my_payload.json \
   --metrics my_metrics.json
@@ -45,7 +45,7 @@ python -m estima.cli \
 
 ---
 
-### 📄 Example: Log-Based Estimation
+### 📄 Example: Log-Based Restimation
 
 #### `my_payload.json`
 ```json
@@ -69,7 +69,7 @@ python -m estima.cli \
 
 #### Run the estimator:
 ```bash
-python -m estima.cli --source log \
+python -m restima.cli --source log \
   --payload my_payload.json \
   --metrics my_metrics.json
 ```
@@ -101,13 +101,13 @@ List of raw performance samples collected during execution:
 
 ## 📈 Output
 
-Estima returns a clean summary like:
+Restima returns a clean summary like:
 
 ```
-📊 Resource Estimation Summary
-• Estimated RAM: 1342.5 MB
-• Estimated CPU: 1.12 cores
-• Estimated I/O: 9.6 MB
+📊 Resource Restimation Summary
+• Restimated RAM: 1342.5 MB
+• Restimated CPU: 1.12 cores
+• Restimated I/O: 9.6 MB
 • Confidence Level: High
 ```
 
