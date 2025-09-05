@@ -1,7 +1,3 @@
-Here’s a refined, GitHub-ready version of your README for **restima** — now styled for clarity, professionalism, and developer engagement:
-
----
-
 # 🧠 Restima
 
 **Restima** is a smart, lightweight Python library that helps you predict how much **RAM**, **CPU**, and **I/O** your tasks will need — before you deploy them.
@@ -110,34 +106,6 @@ Restima returns a clean summary like:
 • Restimated I/O: 9.6 MB
 • Confidence Level: High
 ```
-
----
-
-## 🧪 CLI Expansion
-
-Add subcommands:
-
-```bash
-restima estimate --source log --payload input.json --metrics metrics.json
-restima export --format terraform --output infra.tf
-restima notify --webhook https://hooks.slack.com/...
-restima serve --port 8080
-```
-
----
-
-## 🧠 Summary of What’s New
-
-| Feature | Purpose |
-|--------|---------|
-| `registry.py` | Track models and metadata |
-| `from_otel.py` | Ingest OpenTelemetry spans |
-| `to_terraform.py` | Export infra specs |
-| `to_slack.py` | Push summaries to Slack |
-| `server.py` | Serve Estima as an API |
-| Expanded CLI | Multi-modal interface |
-
----
 
 ## 📃 License
 
