@@ -113,6 +113,32 @@ Restima returns a clean summary like:
 
 ---
 
+## 🧪 CLI Expansion
+
+Add subcommands:
+
+```bash
+restima estimate --source log --payload input.json --metrics metrics.json
+restima export --format terraform --output infra.tf
+restima notify --webhook https://hooks.slack.com/...
+restima serve --port 8080
+```
+
+---
+
+## 🧠 Summary of What’s New
+
+| Feature | Purpose |
+|--------|---------|
+| `registry.py` | Track models and metadata |
+| `from_otel.py` | Ingest OpenTelemetry spans |
+| `to_terraform.py` | Export infra specs |
+| `to_slack.py` | Push summaries to Slack |
+| `server.py` | Serve Estima as an API |
+| Expanded CLI | Multi-modal interface |
+
+---
+
 ## 📃 License
 
 This project is licensed under the [MIT License](LICENSE).
