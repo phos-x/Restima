@@ -1,7 +1,3 @@
-Here’s a refined, GitHub-ready version of your README for **restima** — now styled for clarity, professionalism, and developer engagement:
-
----
-
 # 🧠 Restima
 
 **Restima** is a smart, lightweight Python library that helps you predict how much **RAM**, **CPU**, and **I/O** your tasks will need — before you deploy them.
@@ -110,8 +106,6 @@ Restima returns a clean summary like:
 • Restimated I/O: 9.6 MB
 • Confidence Level: High
 ```
-
----
 
 ## 📃 License
 
