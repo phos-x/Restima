@@ -1,6 +1,6 @@
 [project]
 name = "restima"
-version = "0.2.0"
+version = "0.3.0"
 description = "Extensible resource estimation library for services, logs, traces, and observability"
 authors = [{ name="Adetayo", email="taeyoslim@gmail.com" }]
 license = "MIT"

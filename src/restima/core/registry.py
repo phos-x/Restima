@@ -1,7 +1,12 @@
-_registry = {}
+import json
+from pathlib import Path
 
-def register_model(name: str, version: str, metadata: dict):
-    _registry[f"{name}:{version}"] = metadata
+REGISTRY_PATH = Path("models/registry.json")
 
-def get_model(name: str, version: str):
-    return _registry.get(f"{name}:{version}", {})
+def update_registry(model_path: str, metrics: dict):
+    registry = {
+        "model_path": model_path,
+        "trained_on": metrics.get("timestamp"),
+        "features": list(metrics.keys())
+    }
+    REGISTRY_PATH.write_text(json.dumps(registry, indent=2))
